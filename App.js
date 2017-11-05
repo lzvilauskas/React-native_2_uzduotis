@@ -10,7 +10,7 @@ export default class AntraUzd extends Component {
 
     return (
       
-    <View >
+    <View style={stilius.containeris}>
           
       
 
@@ -21,3 +21,12 @@ export default class AntraUzd extends Component {
   }
 }
 
+
+const stilius = StyleSheet.create({
+  containeris: {
+    flex: 1, 
+    flexDirection: 'column', 
+    justifyContent:"center", 
+    alignItems:"center"
+  },
+})
