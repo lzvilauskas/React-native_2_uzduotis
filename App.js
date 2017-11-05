@@ -43,6 +43,11 @@ export default class AntraUzd extends Component {
 
        <View style={stilius.virsutinePuse}>
 
+          <Text style ={stilius.tekstasPradinis}>Tekstas Nr. 1</Text>
+          <Text style ={stilius.tekstasPradinis}>Tekstas Nr. 2</Text>
+          <Text style ={stilius.tekstasPradinis}>Tekstas Nr. 3</Text>
+          <Text style ={stilius.tekstasPradinis}>Tekstas Nr. 4</Text>
+
        </View>
         
 
@@ -89,5 +94,23 @@ const stilius = StyleSheet.create({
   mygtukasTekstas: {
     padding: 10,
     color: 'black'
+  },
+  tekstasPradinis: {
+    margin: 10,
+    padding: 10, 
+    textAlign:"center", 
+    borderStyle:"solid",
+    borderWidth: 5, 
+    borderColor:"#7FFFD4", 
+    color:"black"
+  },
+  tekstasPakeistas: {
+   margin: 10,
+   padding: 10, 
+   textAlign:"center", 
+   borderStyle:"solid",
+   borderWidth: 5, 
+   borderColor:"#7FFFD4", 
+   color:"white"
   },
 })
