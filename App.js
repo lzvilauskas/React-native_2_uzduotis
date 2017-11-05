@@ -3,8 +3,16 @@ import { AppRegistry, Text, View, StyleSheet, TouchableHighlight} from 'react-na
 
 
 export default class AntraUzd extends Component {
-
  
+  constructor(){
+    super();
+    this.state = {
+       tekstas1: false,
+       tekstas2: false,
+       tekstas3: false,
+       tekstas4: false
+    }
+  }
   
   render() {
 
