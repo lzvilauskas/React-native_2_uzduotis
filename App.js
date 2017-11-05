@@ -13,6 +13,30 @@ export default class AntraUzd extends Component {
        tekstas4: false
     }
   }
+
+  onPressBtn1()
+  {
+    if(this.state.tekstas1) this.setState({tekstas1: false});
+    else this.setState({tekstas1: true});
+  }
+
+  onPressBtn2()
+  {
+    if(this.state.tekstas2) this.setState({tekstas2: false});
+    else this.setState({tekstas2: true});
+  }
+
+  onPressBtn3()
+  {
+    if(this.state.tekstas3) this.setState({tekstas3: false});
+    else this.setState({tekstas3: true});
+  }
+
+  onPressBtn4()
+  {
+    if(this.state.tekstas4) this.setState({tekstas4: false});
+    else this.setState({tekstas4: true});
+  }  
   
   render() {
 
@@ -22,25 +46,25 @@ export default class AntraUzd extends Component {
           
        <View style={stilius.apatinePuse}>
 
-        <TouchableHighlight >
+        <TouchableHighlight onPress={this.onPressBtn1.bind(this)}>
           <View style={stilius.mygtukas}>
             <Text style={stilius.mygtukasTekstas}>Mygtukas Nr.1</Text>
           </View>
         </TouchableHighlight>
 
-        <TouchableHighlight  >
+        <TouchableHighlight onPress={this.onPressBtn2.bind(this)}>
           <View style={stilius.mygtukas}>
             <Text style={stilius.mygtukasTekstas}>Mygtukas Nr.2</Text>
           </View>
         </TouchableHighlight>
           
-        <TouchableHighlight  >
+        <TouchableHighlight onPress={this.onPressBtn3.bind(this)}>
           <View style={stilius.mygtukas}>
             <Text style={stilius.mygtukasTekstas}>Mygtukas Nr.3</Text>
           </View>
         </TouchableHighlight>
 
-        <TouchableHighlight  >
+        <TouchableHighlight onPress={this.onPressBtn4.bind(this)}>
           <View style={stilius.mygtukas}>
             <Text style={stilius.mygtukasTekstas}>Mygtukas Nr.4</Text>
           </View>
