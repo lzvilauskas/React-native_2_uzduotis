@@ -75,10 +75,10 @@ export default class AntraUzd extends Component {
 
        <View style={stilius.virsutinePuse}>
 
-          <Text style ={stilius.tekstasPradinis}>Tekstas Nr. 1</Text>
-          <Text style ={stilius.tekstasPradinis}>Tekstas Nr. 2</Text>
-          <Text style ={stilius.tekstasPradinis}>Tekstas Nr. 3</Text>
-          <Text style ={stilius.tekstasPradinis}>Tekstas Nr. 4</Text>
+          <Text style ={this.state.tekstas1 ? stilius.tekstasPakeistas: stilius.tekstasPradinis}>Tekstas Nr. 1</Text>
+          <Text style ={this.state.tekstas2 ? stilius.tekstasPakeistas: stilius.tekstasPradinis}>Tekstas Nr. 2</Text>
+          <Text style ={this.state.tekstas3 ? stilius.tekstasPakeistas: stilius.tekstasPradinis}>Tekstas Nr. 3</Text>
+          <Text style ={this.state.tekstas4 ? stilius.tekstasPakeistas: stilius.tekstasPradinis}>Tekstas Nr. 4</Text>
 
        </View>
         
